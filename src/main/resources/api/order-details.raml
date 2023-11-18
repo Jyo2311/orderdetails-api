@@ -1,0 +1,33 @@
+#%RAML 1.0
+title: order-details
+/order details:
+  get:
+    body:
+      application/json:
+        example:
+          {
+            "order id": 121,
+            "name": "jyo"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              message: "order details fetched successfully"
+  post:
+    body:
+      application/json:
+        example:
+          {
+            "name" : "mule",
+            "order id": "123"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            description: "new order placed successfully"
+            
+    
+                            
